@@ -20,7 +20,18 @@ class Song
   end
   
   def Song.genres 
-    
+    u_genres = []
+    gen_hash = {}
+    @@genres.each do |gen|
+      if !gen_hash.key?(gen)
+        gen_hash[gen] = 0 
+      end
+    end
+    gen_hash.each do |gen, num|
+      u_genres << gen 
+    end
+      
+    u_genres
   
   end
   
