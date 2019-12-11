@@ -23,7 +23,19 @@ class Song
   
   end
   
-  def Song.artists #returns array of all artists of existing songs 
-  
+  def Song.artists 
+    u_artist = []
+    art_hash = {}
+      @@artists.each do |art| 
+        if !art_hash.key?(art)
+          art_hash[art] = 0
+        else
+          art_hash[art] += 1 
+        end
+      end
+    art_hash.each do |art, num|
+      u_artist << art 
+    end
+    u_artist
   end
 end 
