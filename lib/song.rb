@@ -15,7 +15,7 @@ class Song
   @@genres =[]
   @@artists = []
   
-  def self.count 
+  def Song.count 
     return @@count 
   end
   
