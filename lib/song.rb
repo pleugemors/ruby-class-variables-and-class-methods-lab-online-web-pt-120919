@@ -23,7 +23,7 @@ class Song
   
   end
   
-  def artists #returns array of all artists of existing songs 
+  def Song.artists #returns array of all artists of existing songs 
   
   end
 end 
