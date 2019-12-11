@@ -50,4 +50,16 @@ class Song
     end
     u_artist
   end
+  
+  def Song.genre_count
+    gen_hash = {}
+    @@genres.each do |gen|
+      if !gen_hash.key?(gen)
+        gen_hash[gen]= 1 
+      else
+        gen_hash[gen] += 1
+      end
+    end
+    gen_hash
+  end
 end 
