@@ -19,7 +19,8 @@ class Song
     return @@count 
   end
   
-  def genres # returns array of uniqe genres 
+  def Song.genres 
+    
   
   end
   
