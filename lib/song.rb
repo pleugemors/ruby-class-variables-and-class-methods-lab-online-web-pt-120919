@@ -63,7 +63,7 @@ class Song
     gen_hash
   end
   
-  def Song.artitst_count
+  def Song.artist_count
     art_hash = {}
     @@artists.each do |art|
       if !art_hash.key?(art)
